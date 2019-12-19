@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HORARIO</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			#reloj{
+				background-color: pink;
+				text-align: center;
+				color: white;
+				border: 2px solid blue;
+			}
+		</style>
+
+		<script>
+			function anadirCero(i){
+				if (i < 10){
+					i="0" + i;
+				}
+				return i;
+			}
+			function f(){
+				var fecha = new Date();
+				var hora = anadirCero(fecha.getHours());
+				var minutos= anadirCero(fecha.getMinutes());
+				var segundos=anadirCero(fecha.getSeconds());
+				document.getElementById('contenedor').innerHTML= + hora + ":" + minutos + ":" + segundos;
+				setInterval (f, 1000);
+				document.getElementById("reloj").style.backgroundColor="orange";
+				document.getElementById("reloj").style.color="black";
+				document.getElementById("reloj").style.border="8px solid green";
+				document.getElementById("reloj").style.textAlign="left";
+			}
+		</script>
+	</head>
+		
+	<body>
+		<h1>RELOJ</h1/>
+		<button onclick="f()">Dame la hora</button>
+		<div id="reloj">
+			<br>
+			<h1 id="contenedor"></h1>
+		</div>
+	
+		<script>
+			function cambiaFondo= new Date
+				var dia= cambiaFondo.getDay();
+				if (dia==0){
+					document.getElementById("body").style.backgroundColor="blue";
+				}
+				else if (dia==1){
+					document.getElementById("body").style.backgroundColor="red";
+				}else if (dia==2){
+					document.getElementById("body").style.backgroundColor="green";
+				}else if (dia==3){
+					document.getElementById("body").style.backgroundColor="pink";
+				}else if (dia==4){
+					document.getElementById("body").style.backgroundColor="yellow";
+				}else if (dia==5){
+					document.getElementById("body").style.backgroundColor="orange";
+				}else if (dia==6){
+					document.getElementById("body").style.backgroundColor="purple";
+				}
+		</script>
+		<div id=cambiaFondo></div>		
+		<p id="media"></p>
+		
+		<table border="1">
+			<tr>
+				<td>Lunes</td>
+				<td>Martes</td>
+				<td>Miercoles</td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+			</tr>
+			<tr> 
+				<td><p style="color:red"> TIC</td>
+				<td><p style="color:yellow"> Mate</td>
+				<td><p style="color:green"> Economia</td>
+				<td><p style="color:pink"> Geografia</td>
+				<td><p style="color:green"> Economia</td>
+			</tr>
+			<tr>
+				<td><p style="color:orange"> Ingles</td>
+				<td><p style="color:blue"> Lengua</td>
+				<td><p style="color:blue"> Lengua</td>
+				<td><p style="color:green"> Economia</td>
+				<td><p style="color:red"> TIC</td>
+			</tr>
+			<tr>
+				<td><p style="color:purple"> Fundamentos</td>
+				<td><p style="color:grey"> Historia</td>
+				<td><P style="color:yellow"> Mate</td>
+				<td><p style="color:red"> TIC</td>
+				<td><p style="color:purple"> Fundamentos</td>
+			</tr>
+			<tr>
+				<td>Recreo</td>
+				<td>Recreo</td>
+				<td>Recreo</td>
+				<td>Recreo</td>
+				<td>Recreo</td>
+			</tr>
+			<tr>
+				<td><p style="color:blue"> Lengua</td>
+				<td><p style="color:orange"> Ingles</td>
+				<td><p style="color:grey"> Historia</td>
+				<td><p style="color:grey"> Historia</td>
+				<td><p style="color:grey"> Historia</td>
+			</tr>
+			<tr>
+				<td><p style="color:yellow"> Mate</td>
+				<td><p style="color:pink"> Geografia</td>
+				<td><p style="color:purple"> Fundamentos</td>
+				<td><p style="color:blue"> Lengua</td>
+				<td><p style="color:yellow"> Mate</td>
+			</tr>
+			<tr>
+				<td><p style="color:pink"> Geografia</td>
+				<td><p style="color:green"> Economia</td>
+				<td><p style="color:pink"> Geografia</td>
+				<td><p style="color:purple"> Fundamentos</td>
+				<td><p style="color:orange"> Ingles</td>
+			</tr>
+		</table>
+		<p>Matematicas: <input type="text" id="n1"></p>
+		<p>Lengua: <input type="text" id="n1"></p>
+		<p>TIC: <input type="text" id="n1"></p>
+		<p>Geografia: <input type="text" id="n1"></p>
+		<p>Fundamentos: <input type="text" id="n1"></p>
+		<p>Ingles: <input type="text" id="n1"></p>
+		<p>Historia: <input type="text" id="n1"></p>
+		<p>Economia: <input type="text" id="n1"></p>
+		<button onclick=media()>Media</button><input type="text" id=suma>
+		
+		
+		
+		
+		
+		
+		
+		</body>
+</html>
